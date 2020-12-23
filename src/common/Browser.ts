@@ -410,7 +410,7 @@ export class Browser extends EventEmitter {
     predicate: (x: Target) => boolean,
     options: WaitForTargetOptions = {}
   ): Promise<Target> {
-    const { timeout = 30000 } = options;
+    const { timeout = 30000000 } = options;
     const existingTarget = this.targets().find(predicate);
     if (existingTarget) return existingTarget;
     let resolve;

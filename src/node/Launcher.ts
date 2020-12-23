@@ -74,7 +74,7 @@ class ChromeLauncher implements ProductLauncher {
       ignoreHTTPSErrors = false,
       defaultViewport = { width: 800, height: 600 },
       slowMo = 0,
-      timeout = 30000,
+      timeout = 30000000,
     } = options;
 
     const profilePath = path.join(os.tmpdir(), 'puppeteer_dev_chrome_profile-');
@@ -248,7 +248,7 @@ class FirefoxLauncher implements ProductLauncher {
       ignoreHTTPSErrors = false,
       defaultViewport = { width: 800, height: 600 },
       slowMo = 0,
-      timeout = 30000,
+      timeout = 30000000,
       extraPrefsFirefox = {},
     } = options;
 

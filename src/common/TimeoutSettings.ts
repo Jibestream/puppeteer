@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-const DEFAULT_TIMEOUT = 30000;
+const DEFAULT_TIMEOUT = 30000000;
 
 /**
  * @internal
